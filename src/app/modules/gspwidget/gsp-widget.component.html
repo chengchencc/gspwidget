@@ -1,0 +1,30 @@
+<div class="gsp-widget" [ngStyle]="wgStyle">
+
+    <div class="gsp-widget-header" *ngIf="_title || _titleTpl">
+        <ng-template #defaultTitleTpl>
+            <div class="w-title">
+                {{_title}}
+            </div>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="_titleTpl || defaultTitleTpl"></ng-template>
+    </div>
+
+    <div class="gsp-widget-body" [ngStyle]="bodyStyle">
+        <ng-template #defaultContentTpl>
+            <ng-content></ng-content>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="_contentTpl || defaultContentTpl"></ng-template>
+        <ng-template #modal_component></ng-template>
+    </div>
+
+    <div class="gsp-widget-footer" *ngIf="_footer || _footerTpl">
+        <ng-template #defaultFooterTpl>
+            <div class="w-footer">
+                {{_footer}}
+            </div>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="_footerTpl || defaultFooterTpl"></ng-template>
+
+    </div>
+
+</div>

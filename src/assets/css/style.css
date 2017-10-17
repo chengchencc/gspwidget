@@ -1,0 +1,44 @@
+﻿.left-side {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    /* background-color: red; */
+}
+
+.content {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    /* background-color: cornflowerblue; */
+    border-radius: 5px;
+    border-left: 1px solid #e0dfdf;
+}
+
+.c-list {
+    margin: 20px 0px;
+}
+
+.c-list li {
+    width: 150px;
+    background-color: chartreuse;
+    margin: 5px;
+}
+
+.c-list li .c-item .c-item-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+.c-list li .c-item .c-item-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0px;
+}

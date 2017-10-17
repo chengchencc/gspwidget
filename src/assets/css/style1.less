@@ -1,0 +1,89 @@
+﻿@import "variables.less";
+@import "../css/bootstrap/less/mixins.less";
+
+/*tool*/
+.no-padding{
+    padding:0px;
+}
+.icon-right-margin {
+    margin-right:5px;
+}
+/*end tool*/
+
+.left-side {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    /* background-color: red; */
+    .list-group {
+        margin-top:5px;
+        .list-group-item {
+            border-style:none;
+            &:first-child {
+                .border-top-radius(0);
+            }
+
+            &:last-child {
+                .border-bottom-radius(0);
+            }
+        }
+    }
+}
+
+.content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0px;
+    bottom: 0px;
+    overflow:auto;
+    /* background-color: cornflowerblue; */
+    /*border-radius: 5px;*/
+    // border-left: 1px solid #e0dfdf;
+
+    .toolbar {
+        height: 55px;
+        padding: 10px;
+    }
+
+
+    .c-list {
+        margin: 20px 0px;
+
+        li {
+            //float:left;
+            //list-style:none;
+            width: 120px;
+            height:120px;
+            //background-color: chartreuse;
+            margin: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: aliceblue;
+            }
+
+
+            .c-item {
+                .c-item-img {
+                    width: 60px;
+                    height: 60px;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -30px;
+                    margin-top: 10px;
+                }
+
+                .c-item-title {
+                    text-align: center;
+                    font-size: 15px;
+                    margin: 15px 0px 10px 0px;
+                }
+            }
+        }
+    }
+}
+
+

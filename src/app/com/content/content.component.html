@@ -1,0 +1,48 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 no-padding">
+                <div class="toolbar">
+
+                    <button type="button" class="btn btn-primary" (click)="newPage()"><i class="glyphicon glyphicon-upload icon-right-margin"></i>新页面</button>
+                    <button type="button" class="btn btn-default" (click)="addFolder()"><i class="glyphicon glyphicon-folder-close icon-right-margin"></i>新建文件夹</button>
+                    <button type="button" class="btn btn-default" (click)="test()"><i class="glyphicon glyphicon-phone icon-right-margin"></i>我的设备</button>
+
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">分享</button>
+                        <button type="button" class="btn btn-default">下载</button>
+                        <button type="button" class="btn btn-default">删除</button>
+                        <button type="button" class="btn btn-default">复制到</button>
+                        <button type="button" class="btn btn-default">重命名</button>
+                        <button type="button" class="btn btn-default">移动到</button>
+                        <button type="button" class="btn btn-default">推送到云设备</button>
+                    </div>
+
+
+                </div>
+
+                <ol class="breadcrumb">
+                    <li *ngIf="breadcrumbs.length!=1"><a href="#" (click)="back()"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>返回</a></li>
+                    <li *ngFor="let breadcrumb of breadcrumbs">
+                        <a href="#">{{breadcrumb.name}}</a>
+                    </li>
+                    <!--<li><a href="#">Library</a></li>
+                  <li class="active">Data</li>-->
+                </ol>
+
+
+
+                <ul class="c-list list-inline">
+                    <li *ngFor="let file of files" (click)="openFolder(file)">
+                        <app-page-item [file]="file" (fileChange)="addFolderRollback()"></app-page-item>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

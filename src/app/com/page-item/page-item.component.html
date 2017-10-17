@@ -1,0 +1,10 @@
+<div class="c-item">
+    <img class="c-item-img" [src]="file.icon" alt="Alternate Text" />
+    <div class="c-item-title" *ngIf="file.state == 0">{{file.title}}</div>
+    <div class="c-item-edit" *ngIf="file.state == 1">
+        <input type="text" class="form-control" [value]="file.title" placeholder="Jane Doe">
+        <button type="button" class="btn btn-success btn-xs" (click)="addFolderCommit(file)"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-danger btn-xs" (click)="addFolderRollback()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+    </div>
+    <div class="c-item-msg"></div>
+</div>

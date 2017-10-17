@@ -1,0 +1,54 @@
+.gsp-widget {
+    position: relative;
+    float: left;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 3px; */
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+.gsp-widget:hover {
+    box-shadow: 0px 1px 8px rgba(128, 128, 128, 0.37);
+}
+
+.gsp-widget .gsp-widget-header {
+    /* position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px; */
+    height: 30px;
+    line-height: 30px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+    /* border-bottom: 1px dotted #ddd; */
+}
+
+.gsp-widget .gsp-widget-body {
+    /* position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    overflow: auto; */
+    position: relative;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    overflow: auto;
+}
+
+.gsp-widget .gsp-widget-footer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    line-height: 30px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    font-size: 14px;
+    /* border-top: 1px dotted #ddd; */
+    /* background-color: #f9f9f9; */
+}

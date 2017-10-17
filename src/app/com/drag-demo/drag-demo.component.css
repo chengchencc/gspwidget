@@ -1,0 +1,7 @@
+.dragItem {
+    height: 100px;
+    width: 100px;
+    background-color: #4095DB;
+    float: left;
+    margin: 2px;
+}
